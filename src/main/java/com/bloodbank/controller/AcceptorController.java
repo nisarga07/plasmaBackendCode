@@ -34,10 +34,11 @@ public class AcceptorController {
 		acceptor=acceptorServices.saveAcceptor(acceptor);;
 		return "Hi" +acceptor.getUsername() +" your Registration process successfully completed";
 	}
-	@PostMapping("/addAcceptorList") // new comment
+	@PostMapping("/addAcceptorList") // sample comment 
 	public List<Acceptor> addAcceptorList(@RequestBody List<Acceptor> acceptor) {
 		return acceptorServices.saveAcceptor(acceptor);
 	}
+	//getting acceptor detaiuls
 	@GetMapping("/getAllAcceptors")
 	public List<Acceptor> getAllAcceptors() {
 		return acceptorServices.getAcceptors();
