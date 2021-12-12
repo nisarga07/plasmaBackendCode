@@ -43,6 +43,7 @@ public class AcceptorController {
 	public List<Acceptor> getAllAcceptors() {
 		return acceptorServices.getAcceptors();
 	}
+	//get acceptors
 	@GetMapping("/getAcceptorById/{id}")
 	public Acceptor getAcceptorById(@PathVariable Long id) {
 		return acceptorServices.getAcceptorById(id);
