@@ -48,6 +48,7 @@ public class AcceptorController {
 	public Acceptor getAcceptorById(@PathVariable Long id) {
 		return acceptorServices.getAcceptorById(id);
 	}
+	//ADDEDD COMMNET
 	@GetMapping("/getAcceptor/{group}")
 	public List<Acceptor> getAcceptorByGroup(@PathVariable String group) {
 		return acceptorServices.getUserByBloodGroup(group);
