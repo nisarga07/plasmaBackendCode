@@ -43,7 +43,8 @@ public class AcceptorController {
 	public List<Acceptor> getAllAcceptors() {
 		return acceptorServices.getAcceptors();
 	}
-	//get acceptors
+	//get acceptors 
+	// get acceptor for plasma 
 	@GetMapping("/getAcceptorById/{id}")
 	public Acceptor getAcceptorById(@PathVariable Long id) {
 		return acceptorServices.getAcceptorById(id);
