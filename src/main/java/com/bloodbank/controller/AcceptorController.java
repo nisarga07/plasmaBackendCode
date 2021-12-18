@@ -1,7 +1,5 @@
 package com.bloodbank.controller;
-
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -20,8 +18,6 @@ import com.bloodbank.model.DonorRequest;
 import com.bloodbank.model.Mail;
 import com.bloodbank.repository.AcceptorRequestRepository;
 import com.bloodbank.service.AcceptorServices;
-
-
 @RestController
 @CrossOrigin
 public class AcceptorController {
@@ -90,9 +86,4 @@ public class AcceptorController {
 		
 		return acceptorServices.updateAcceptorRequest(acceptor);
 	}
-	
-	
-	
-	
-
 }
