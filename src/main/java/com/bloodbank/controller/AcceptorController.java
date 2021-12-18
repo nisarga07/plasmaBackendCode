@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.bloodbank.model.Acceptor;
 import com.bloodbank.model.AcceptorRequest;
 import com.bloodbank.model.DonorRequest;
@@ -26,7 +25,6 @@ import com.bloodbank.service.AcceptorServices;
 @RestController
 @CrossOrigin
 public class AcceptorController {
-
 	@Autowired
 	private AcceptorServices acceptorServices; // This is dependency indejection
 	@PostMapping("/addAcceptor")
