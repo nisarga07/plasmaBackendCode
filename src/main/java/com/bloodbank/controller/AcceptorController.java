@@ -26,6 +26,7 @@ import com.bloodbank.service.AcceptorServices;
 @RestController
 @CrossOrigin
 public class AcceptorController {
+
 	@Autowired
 	private AcceptorServices acceptorServices; // This is dependency indejection
 	@PostMapping("/addAcceptor")
